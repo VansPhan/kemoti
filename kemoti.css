@@ -1,16 +1,11 @@
-/* Basic reset */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	
-	/* Better text styling */
-	font: bold 14px Arial, sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 }
 
-/* Finally adding some IE9 fallbacks for gradients to finish things up */
-
-/* A nice BG gradient */
 html {
 	height: 100%;
 	background: white;
@@ -18,7 +13,6 @@ html {
 	background-size: cover;
 }
 
-/* Using box shadows to create 3D effects */
 #kemoti {
 	width: 325px;
 	height: auto;
@@ -32,18 +26,16 @@ html {
 	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Top portion */
 .top span.clear {
 	float: left;
 }
 
-/* Inset shadow on the screen to create indent */
 .top .screen {
 	display: inline-block;
 	height: 40px;
 	width: 180px;
 	
-/*	float: right;*/
+	float: right;
 	
 	padding: 0 10px;
 	
@@ -51,7 +43,6 @@ html {
 	border-radius: 3px;
 	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
 	
-	/* Typography */
 	font-size: 17px;
 	line-height: 40px;
 	color: white;
@@ -60,10 +51,8 @@ html {
 	letter-spacing: 1px;
 }
 
-/* Clear floats */
 .faces, .top {overflow: hidden;}
 
-/* Applying same to the keys */
 
 .top span.screen {
 	float: left;
@@ -94,10 +83,8 @@ html {
 	line-height: 36px;
 	text-align: center;
 	
-	/* prevent selection of text inside keys */
 	user-select: none;
 	
-	/* Smoothing out hover and active states using css3 transitions */
 	transition: all 0.2s ease;
 }
 
@@ -107,7 +94,6 @@ html {
 	color: white;
 }
 
-/* Some hover effects */
 .faces span:hover {
 	background: #9c89f6;
 	box-shadow: 0px 4px #6b54d3;
@@ -120,7 +106,6 @@ html {
 	color: white;
 }
 
-/* Simulating "pressed" effect on active state of the keys by removing the box-shadow and moving the keys down a bit */
 .faces span:active {
 	box-shadow: 0px 0px #6b54d3;
 	top: 4px;

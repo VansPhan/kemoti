@@ -1,18 +1,28 @@
+$(document).ready(function() {
 
 var syms = document.querySelectorAll('#kemoti span');
+// try doing the above query on the dom using jquery
+// look something like  var syms =  $('#kemoti span')
+// use console.log to debug in chrome console.
 var screenForm = [];
-
 
 for(var i = 0; i < syms.length; i++) {
 	syms[i].onclick = function(e) {
-		
+
 		var input = document.querySelector('.screen');
+		// you named two variables "input" overwriting the previous one
+		// what did you wan to do here?
 		var input = document.getElementById("kemoti");
+
+
 		var inputClass = input.className;
 		var inputVal = input.innerHTML;
+
+
+		// what is "this"?
 		var btnVal = this.innerHTML;
-		
-		
+
+
 		if(btnVal == 'C') {
 			input.innerHTML = '';
 		}
@@ -32,8 +42,10 @@ for(var i = 0; i < syms.length; i++) {
 		// else {
 		// 	input.innerHTML += btnVal;
 		// }
-		
+
 		// prevent page jumps
 		e.preventDefault();
-	} 
+	}
 }
+ });
+

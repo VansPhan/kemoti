@@ -28,11 +28,21 @@ for(var i = 0; i < syms.length; i++) {
 		}
 
 		switch(inputClass){
-		    case "faces": input.innerHTML = "I have class1"; break;
-		    case "top": input.innerHTML = "I have class2"; break;
-		    case "class3": input.innerHTML = "I have class3"; break;
-		    case "class4": input.innerHTML = "I have class4"; break;
-		    default: input.innerHTML = "Hi";
+		    case "faces":
+			    input.innerHTML = "I have class1";
+			    break;
+		    case "top":
+			    input.innerHTML = "I have class2";
+			    break;
+		    case "class3":
+			    input.innerHTML = "I have class3";
+			    break;
+		    case "class4":
+			    input.innerHTML = "I have class4";
+			    break;
+		    default:
+			    input.innerHTML = "Hi";
+			    break
 		}
 
 		// if else(btnVal.contains(faces)) {

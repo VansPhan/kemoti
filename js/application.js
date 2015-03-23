@@ -20,14 +20,14 @@ $syms.each(function() {
 		var $clickedOn = $(event.target);
 		// console.log($clickedOn.parent().hasClass('faces'));
 		if (($clickedOn.parent().hasClass('faces')) === true)
-			// console.log(screenForm);
+			var printed = ""
 			for (var key in screenForm) {
-				var printed = ""
 				if (screenForm.hasOwnProperty(key)) {
 					printed += screenForm[key];
-				}	
-				console.log(printed);
+				}					
 			}
+			console.log(printed);
+
 	});
 });
 

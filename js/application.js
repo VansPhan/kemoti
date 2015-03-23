@@ -20,11 +20,18 @@ $syms.each(function() {
 		var $clickedOn = $(event.target);
 		// console.log($clickedOn.parent().hasClass('faces'));
 		if (($clickedOn.parent().hasClass('faces')) === true)
-			console.log('WOO');
+			// console.log(screenForm);
+			for (var key in screenForm) {
+				var printed = ""
+				if (screenForm.hasOwnProperty(key)) {
+					printed += screenForm[key];
+				}	
+				console.log(printed);
+			}
 	});
 });
 
-console.log(screenForm.parse(screenForm.stringify(screenForm)));
+// console.log(screenForm.parse(screenForm.stringify(screenForm)));
 
 
 

@@ -20,10 +20,25 @@ $syms.each(function() {
 		var $clickedOn = $(event.target);
 		// console.log($clickedOn.parent().hasClass('faces'));
 		if (($clickedOn.parent().hasClass('faces')) === true)
+<<<<<<< HEAD
 			
 	});
 });
 
+=======
+			var printed = ""
+			for (var key in screenForm) {
+				if (screenForm.hasOwnProperty(key)) {
+					printed += screenForm[key];
+				}					
+			}
+			console.log(printed);
+
+	});
+});
+
+// console.log(screenForm.parse(screenForm.stringify(screenForm)));
+>>>>>>> 8e8d48b86db63eeb9d4ee5d1f2fe67142b56ea59
 
 
 

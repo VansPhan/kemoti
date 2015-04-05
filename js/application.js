@@ -2,20 +2,29 @@ $(document).ready(function() {
 
 //Made "var syms = document.querySelectorAll('#kemoti span');" into jquery
 	var $syms = $('#kemoti span');
-	console.log($syms);
+	// console.log($syms);
+
+	function outputScreen() {
+	
+		
+			
+	}
 
 		$syms.each(function() {
 			var $sym = $(this);
+		
 
 			$sym.on('click', function(event) {
 				var $clickedOn = $(event.target);
-
-				// console.log($clickedOn.parent().hasClass('faces'));
-				if (($clickedOn.parent().hasClass('faces')) === true)
-					console.log($clickedOn);
+				var $input = $clickedOn.innerHTML;
+				var printScreen = document.getElementById("output").innerHTML += $input;
 					
-				else
-					console.log("It's not a face")
+					if (($clickedOn.parent().hasClass('faces')) === true)
+					//I want this to print the actual text but Im getting back undefined
+					//problem is on line 19 where this is coming back as undefined
+						printScreen;
+					else
+						console.log("It's not a face");
 
 			});
 

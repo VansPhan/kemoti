@@ -51,7 +51,7 @@ html {
 	letter-spacing: 1px;
 }
 
-.faces, .top {overflow: hidden;}
+.hands, .faces, .top {overflow: hidden;}
 
 
 .top span.screen {
@@ -62,7 +62,7 @@ html {
 	margin: 0 7px 18px 0;
 }
 
-.faces span, .top span.clear {
+.hands span, .faces span, .top span.clear {
 	float: left;
 	position: relative;
 	display: inline-block;
@@ -94,7 +94,7 @@ html {
 	color: white;
 }
 
-.faces span:hover {
+.hands span:hover, .faces span:hover {
 	background: #9c89f6;
 	box-shadow: 0px 4px #6b54d3;
 	color: white;
@@ -106,7 +106,7 @@ html {
 	color: white;
 }
 
-.faces span:active {
+.hands span:active, .faces span:active {
 	box-shadow: 0px 0px #6b54d3;
 	top: 4px;
 }

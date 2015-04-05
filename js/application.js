@@ -4,12 +4,6 @@ $(document).ready(function() {
 	var $syms = $('#kemoti span');
 	// console.log($syms);
 
-	function outputScreen() {
-	
-		
-			
-	}
-
 		$syms.each(function() {
 			var $sym = $(this);
 		

@@ -50,7 +50,7 @@ html {
 	letter-spacing: 1px;
 }
 
-.arm, .eye, .mouth, .top, .face {overflow: hidden;}
+.item, .arm, .eye, .mouth, .top, .face {overflow: hidden;}
 
 
 .top span.screen {
@@ -61,7 +61,7 @@ html {
 	margin: 0 7px 18px 0;
 }
 
-.face span, .arm span, .eye span, .mouth span, .top span.copy {
+.item span, .face span, .arm span, .eye span, .mouth span, .top span.copy {
 	float: left;
 	position: relative;
 	display: inline-block;
@@ -93,7 +93,7 @@ html {
 	color: white;
 }
 
-.face span:hover, .arm span:hover, .eye span:hover, .mouth span:hover {
+.item span:hover, .face span:hover, .arm span:hover, .eye span:hover, .mouth span:hover {
 	background: #9c89f6;
 	box-shadow: 0px 4px #6b54d3;
 	color: white;
@@ -105,7 +105,7 @@ html {
 	color: white;
 }
 
-.face span:active, .arm span:active, .eye span:active .mouth span:active {
+.item span:active, .face span:active, .arm span:active, .eye span:active .mouth span:active {
 	box-shadow: 0px 0px #6b54d3;
 	top: 4px;
 }
@@ -113,5 +113,9 @@ html {
 .top span.copy:active {
 	top: 4px;
 	box-shadow: 0px 0px #d3545d;
+}
+
+#mouth, #eye, #face, #arm, #item {
+	display: none;
 }
 

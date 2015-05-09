@@ -6,7 +6,7 @@ var $syms = $('#kemoti span');
 		$sym.on('click', function(event) {
 			var $clickedOn = $(event.target);
 			var input = $clickedOn.text();
-			var classname = "." + $clickedOn.parent()[0].getAttribute("class") + "Slot";
+			var classname = "." + $clickedOn.parent()[0].getAttribute("id") + "Slot";
 			if (classname == ".faceSlot") {
 				var arr = input.split("  ");
 				$(".lfaceSlot").text(arr[0]);
@@ -21,6 +21,7 @@ var $syms = $('#kemoti span');
 });
 
 function toggle_visibility(id) {
+		$(".btn").hide();
        var e = document.getElementById(id);
        if(e.style.display == 'block')
           e.style.display = 'none';

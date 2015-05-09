@@ -13,7 +13,7 @@ html {
 }
 
 #kemoti {
-	width: 420px;
+	width: 450px;
 	height: auto;
 
 	margin: 100px auto;
@@ -118,4 +118,10 @@ html {
 #mouth, #eye, #face, #arm, #item {
 	display: none;
 }
+
+.buttons {
+	text-align: center;
+}
+
+
 

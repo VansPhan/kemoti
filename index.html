@@ -2,6 +2,7 @@
 <html>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <link href="./css/main.css" rel="stylesheet">
 
 
@@ -10,37 +11,105 @@
 <div id="kemoti">
 	<!-- Screen and clear key -->
 	<div class="top">
-		<span class="clear">C</span>
-		<span class="screen" id="output"></span>
+		<span class="copy" onclick="copyToClipboard()">COPY</span>
+		<span class="screen" id="screenId">
+			<span id="larmSlot" class="armSlot"></span>
+			<span id="lfaceSlot" class="lfaceSlot"></span>
+			<span id="leyeSlot" class="eyeSlot"></span>
+			<span id="mouthSlot" class="mouthSlot"></span>
+			<span id="reyeSlot" class="eyeSlot"></span>
+			<span id="rfaceSlot" class="rfaceSlot"></span>
+			<span id="rarmSlot" class="armSlot"></span>
+			<span id="itemSlot" class="itemSlot"></span>
+		</span>
+	</div>
+	<div class="buttons">
+		<button onclick="toggle_visibility('mouth')">MOUTH</button>
+		<button onclick="toggle_visibility('eye')">EYES</button>
+		<button onclick="toggle_visibility('face')">FACE</button>
+		<button onclick="toggle_visibility('arm')">ARM</button>
+		<button onclick="toggle_visibility('item')">ITEM</button>
+	</div>
+	<div class="mouth btn" id="mouth">
+		<span>﹏</span>
+		<span>▽</span>
+		<span>〇</span>
+		<span>ω</span>
+		<span>▂</span>
+		<span>_</span>
+		<span>ڡ </span>
+		<span>⌓</span>
+		<span></span>
+		<span></span>
+		<span></span>	
+		<span></span>
 	</div>
 
-	<div class="faces">
-		<!-- operators and other keys -->
-		<span>ლ(ಠ_ಠ ლ）</span>
-		<span>ლ(ಠ_ಠ ლ）</span>
-		<span>3</span>
+		<div class="eye btn" id="eye">
+		<span>ට</span>
+		<span>ಠ</span>
+		<span>ಥ</span>
+		<span>-</span>
+		<span>=</span>
+		<span>ꆤ</span>
+		<span>⚈᷁</span>
+		<span>•͈</span>
 		<span></span>
 		<span></span>
+		<span></span>	
 		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
+
+	
 	</div>
 
-	<div class="hands">
-		<span>ლ(ಠ_ಠ ლ）</span>
-		<span>ლ(ಠ_ಠ ლ）</span>
-		<span>3</span>
+	<div class="face btn" id="face">
+		<span>【  】</span>
+		<span>[  ]</span>
+		<span>(  )</span>
+		<span>ʕ  ʔ</span>
+		<span>ʃ  ƪ</span>
+		<span>|  |</span>
+		<span>၄  ၃</span>
+		<span>༼  ༽</span>
+		<span></span>
+		<span></span>
+		<span></span>	
+		<span></span>
+
 	</div>
+
+	<div class="arm btn" id="arm">
+		<span>٩</span>
+		<span>ლ</span>
+		<span>щ</span>
+		<span>ノ</span>
+		<span>∩</span>
+		<span>ᕗ</span>
+		<span>o</span>
+		<span>凸</span>	
+		<span></span>
+		<span></span>
+		<span></span>	
+		<span></span>
+
+	</div>
+
+	<div class="item btn" id="item">
+		<span>︻┳═一</span>
+		<span>︵ ┻━┻</span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>	
+		<span></span>
+		<span></span>
+		<span></span>	
+		<span></span>
+
+	</div>
+
 </div>
 
 <!-- PrefixFree -->

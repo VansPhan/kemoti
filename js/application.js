@@ -1,40 +1,38 @@
 $(document).ready(function() {
 
-//Made "var syms = document.querySelectorAll('#kemoti span');" into jquery
-	var $syms = $('#kemoti span')
-	// console.log($syms);
-
-		$syms.each(function() {
-			var $sym = $(this)
-
-
-			$sym.on('click', function(event) {
-				var $clickedOn = $(event.target)
-				var input = $clickedOn.text()
-				console.log(input)
-				// var printScreen = document.getElementById("output").innerHTML += input;
-				var printScreen = $("#output").text(input)
-					if (($clickedOn.parent().hasClass('faces')) === true)
-					//I want this to print the actual text but Im getting back undefined
-					//problem is on line 19 where this is coming back as undefined
-						printScreen;
-					else
-						console.log("It's not a face");
-
-			});
-
+var $syms = $('#kemoti span');
+	$syms.each(function() {
+		var $sym = $(this)
+		$sym.on('click', function(event) {
+			var $clickedOn = $(event.target);
+			var input = $clickedOn.text();
+			var classname = "." + $clickedOn.parent()[0].getAttribute("id") + "Slot";
+			if (classname == ".faceSlot") {
+				var arr = input.split("  ");
+				$(".lfaceSlot").text(arr[0]);
+				$(".rfaceSlot").text(arr[1]);
+				//I returned null to stop the function here
+				return null;
+			}
+			$(classname).text(input);
 		});
+	});
 
 });
 
+function toggle_visibility(id) {
+		$(".btn").hide();
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
 
-// var screenForm = {
-// 	LARM: 'ლ',
-// 	LFACE: '(',
-// 	LEYE: 'ಠ',
-// 	MOUTH: '_',
-// 	REYE: 'ಠ',
-// 	RFACE: ')',
-// 	RARM: 'ლ'
-// };
+function copyToClipboard() {
+	var text = larmSlot.innerHTML + lfaceSlot.innerHTML + leyeSlot.innerHTML 
+		+ mouthSlot.innerHTML + reyeSlot.innerHTML + rfaceSlot.innerHTML 
+		+ rarmSlot.innerHTML + itemSlot.innerHTML;
+	window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+}
 

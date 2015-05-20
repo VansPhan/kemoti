@@ -14,6 +14,13 @@ var $syms = $('#kemoti span');
 				//I returned null to stop the function here
 				return null;
 			}
+			if (classname == ".eyeSlot") {
+				var arr = input.split("  ");
+				$(".leyeSlot").text(arr[0]);
+				$(".reyeSlot").text(arr[1]);
+				//I returned null to stop the function here
+				return null;
+			}
 			$(classname).text(input);
 		});
 	});

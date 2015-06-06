@@ -12,10 +12,12 @@
 </div>
 
 <div id="kemoti">
-	<!-- Screen and clear key -->
+	<!-- Screen and c key -->
 	<div class="top">
 		<span class="copy" onclick="copyToClipboard()">COPY</span>
+		<span class="c" onclick="c()">C</span>
 		<span class="screen" id="screenId">
+			<span id="preSlot" class="preSlot"></span>
 			<span id="larmSlot" class="armSlot"></span>
 			<span id="lfaceSlot" class="lfaceSlot"></span>
 			<span id="leyeSlot" class="leyeSlot"></span>
@@ -27,12 +29,46 @@
 		</span>
 	</div>
 	<div class="buttons">
+		<button onclick="toggle_visibility('pre')">PRESET</button>
 		<button onclick="toggle_visibility('mouth')">MOUTH</button>
 		<button onclick="toggle_visibility('eye')">EYES</button>
 		<button onclick="toggle_visibility('face')">FACE</button>
 		<button onclick="toggle_visibility('arm')">ARM</button>
 		<button onclick="toggle_visibility('item')">ITEM</button>
 	</div>
+
+	<div class="pre btn" id="pre">
+		<span>(۶ૈ ᵒ̌ Дᵒ̌)۶</span>
+		<span>(－‸ლ)</span>
+		<span>ლ(ಠ_ಠლ)</span>
+		<span>(っ˘ڡ˘ς)</span>
+		<span>(シ_ _)シ</span>
+		<span>ఠ ͟ಠ</span>
+		<span>ಠ▃ಠ</span>
+		<span>ಠ_ಠ</span>	
+		<span>(ノಠ ∩ಠ)ノ彡( \\o°o)\\</span>
+		<span>ฅ⁽͑ ˚̀ ˙̭ ˚́ ⁾̉ฅ</span>
+		<span>ʕ•͡-•ʔ</span>	
+		<span>ʕ•̫͡•ʔ❣ʕ-̼͡-ʔ</span>
+		<span>( •᷄ὤ•᷅)？</span>
+		<span>ლ(ٱ٥ٱლ)</span>
+		<span>v( ´･ω･`)_且~~~</span>
+		<span>σ(≧ε≦ｏ)</span>
+		<span>( ˃̶ω˂̶ ૃ)</span>
+		<span>(⁎·́௰·̀)◞ ͂͂(˒̩̩̥́௰˓̩̩̥̀⁎)</span>
+		<span>(oT-T)尸</span>
+		<span>o(╥﹏╥)o</span>
+		<span>(´▽`ʃƪ)</span>
+		<span>(˶ॢ‾᷄﹃‾᷅˵ॢ)ӵᵘᵐᵐᵞ♡♡♡</span>
+		<span>ଘ(੭*ˊᵕˋ)੭* ੈ✩‧₊˚‧⁺</span>
+		<span>(っ˘зʕ•̫͡•ʔcнϋෆ</span>
+		<span>ฅ(ٛ•௰• ٛ )</span>
+		<span>- =͟͟͞͞ =͟͟͞͞ ﾍ( ´Д`)ﾉ</span>
+		<span>(҂‾ ▵‾)︻デ═一 \\(˚▽˚’!)/</span>
+		<span>⋆｡˚ (¦3ꇤ[▓▓]⋆｡˚✩</span>
+
+	</div>
+
 	<div class="mouth btn" id="mouth">
 		<span></span>
 		<span>▽</span>
@@ -98,10 +134,10 @@
 	</div>
 
 	<div class="item btn" id="item">
-		<span>︻┳═一</span>
+		<span></span>
 		<span>︵ ┻━┻</span>
-		<span></span>
-		<span></span>
+		<span>︻┳═一</span>
+		<span>ૈ=͟͟͞͞ ⌨</span>
 		<span></span>
 		<span></span>
 		<span></span>

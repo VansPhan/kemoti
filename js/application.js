@@ -21,11 +21,20 @@ var $syms = $('#kemoti span');
 				//I returned null to stop the function here
 				return null;
 			}
+			if (classname == ".preSlot") {
+				c();
+				$(classname).text(input);
+				return null;
+			}
 			$(classname).text(input);
 		});
 	});
 
 });
+
+function c () {
+	document.getElementById('screenId').innerHTML = "<span id='preSlot' class='preSlot'></span><span id='larmSlot' class='armSlot'></span><span id='lfaceSlot' class='lfaceSlot'></span><span id='leyeSlot' class='leyeSlot'></span><span id='mouthSlot' class='mouthSlot'></span><span id='reyeSlot' class='reyeSlot'></span><span id='rfaceSlot' class='rfaceSlot'></span><span id='rarmSlot' class='armSlot'></span><span id='itemSlot'class='itemSlot'></span>";
+}
 
 function toggle_visibility(id) {
 		$(".btn").hide();
@@ -37,7 +46,7 @@ function toggle_visibility(id) {
     }
 
 function copyToClipboard() {
-	var text = larmSlot.innerHTML + lfaceSlot.innerHTML + leyeSlot.innerHTML 
+	var text = preSlot.innerHTML + larmSlot.innerHTML + lfaceSlot.innerHTML + leyeSlot.innerHTML 
 		+ mouthSlot.innerHTML + reyeSlot.innerHTML + rfaceSlot.innerHTML 
 		+ rarmSlot.innerHTML + itemSlot.innerHTML;
 	window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
